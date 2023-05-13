@@ -24,7 +24,7 @@ app.all('/set', (req, res) => {
 
 app.all('/all', async (req, res) => {
     console.log("Just got a request!")
-    let item = await animals.get("1")
+    let item = await games.get("1")
     res.send(item)
 })
 app.listen(process.env.PORT || 3000)
